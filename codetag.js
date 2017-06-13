@@ -1,7 +1,5 @@
 function copyToClipboard(text) {
 	window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
-	//document.execCommand("delete");
-	//document.execCommand("insertText", false, text);
 }
 
 var parent = chrome.contextMenus.create({
