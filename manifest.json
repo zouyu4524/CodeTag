@@ -4,7 +4,7 @@
   "version": "0.1",
   "permissions": [
       "activeTab", 
-	  "contextMenus"
+      "contextMenus"
    ],
   "background": {
     "scripts": ["codetag.js"]
