@@ -1,0 +1,13 @@
+{
+  "name": "Code Tag",
+  "description": "This extension helps add html tag for editable selected context",
+  "version": "0.1",
+  "permissions": [
+      "activeTab", 
+	  "contextMenus"
+   ],
+  "background": {
+    "scripts": ["codetag.js"]
+  },
+  "manifest_version": 2
+}
