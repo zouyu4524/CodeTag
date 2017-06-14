@@ -5,11 +5,11 @@
   "permissions": [
       "activeTab", 
       "contextMenus",
-	  "clipboardWrite",
-	  "clipboardRead"
+	  "clipboardRead",
+	  "clipboardWrite"
    ],
   "background": {
-    "scripts": ["codetag.js"]
+	"page": "background.html"
   },
   "manifest_version": 2
 }

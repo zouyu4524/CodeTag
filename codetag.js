@@ -1,5 +1,7 @@
 function copyToClipboard(text) {
-	window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+	// window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+	copy(text);
+	//paste();
 }
 
 var parent = chrome.contextMenus.create({
@@ -28,3 +30,19 @@ chrome.contextMenus.create({
 			}
 		}
 });
+
+function copy(str) {
+    var sandbox = $('#sandbox').val(str).select();
+    document.execCommand('copy');
+    sandbox.val('');
+}
+
+function paste() {
+    var result = '',
+        sandbox = $('#sandbox').val('').select();
+    if (document.execCommand('paste')) {
+        result = $("#sandbox").val();
+    }
+    sandbox.val('');
+    return result;
+}
