@@ -12,8 +12,11 @@
     ],
     "background": {
         "scripts": [
-            "codeTag.js"
+            "background.js"
         ]
+    },
+    "icons": {
+        "128": "icon.png"
     },
     "manifest_version": 2
 }
