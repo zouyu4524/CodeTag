@@ -1,19 +1,19 @@
 {
-	"name": "Code Tag",
-	"description": "This extension helps add html tag for editable selected context",
-	"version": "0.2",
-	"permissions": [
-		"contextMenus"
-	],
-	"content_scripts": [{
-			"matches": ["<all_urls>"],
-			"js": ["addTag.js"]
-		}
-	],
-	"background": {
-		"scripts": [
-			"codeTag.js"
-		]
-	},
-	"manifest_version": 2
+    "name": "Code Tag",
+    "description": "This extension helps add html tag for editable selected context",
+    "version": "0.2",
+    "permissions": [
+        "contextMenus"
+    ],
+    "content_scripts": [{
+            "matches": ["<all_urls>"],
+            "js": ["addTag.js"]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "codeTag.js"
+        ]
+    },
+    "manifest_version": 2
 }
