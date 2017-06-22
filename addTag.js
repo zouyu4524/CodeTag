@@ -17,7 +17,7 @@ chrome.extension.onMessage.addListener(function (message, sender, callback) {
     if (message.codetag == "block") {
         codeWithTag = "<pre><code>" + transCode(sel.toString()) + "</code></pre>";
     }
-    if (message.codetag === "inline") {
+    if (message.codetag == "inline") {
         codeWithTag = "<code>" + transCode(sel.toString()) + "</code>";
     }
     var elem = document.activeElement;
