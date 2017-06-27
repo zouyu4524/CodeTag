@@ -18,7 +18,7 @@ chrome.extension.onMessage.addListener(function (message, sender, callback) {
         codeWithTag = "<pre><code>" + transCode(sel.toString()) + "</code></pre>";
     }
     if (message.codetag == "inline") {
-        codeWithTag = "<code>" + transCode(sel.toString()) + "</code>";
+        codeWithTag = "<code class=\"inline\">" + transCode(sel.toString()) + "</code>";
     }
     var elem = document.activeElement;
     var start = elem.selectionStart;
